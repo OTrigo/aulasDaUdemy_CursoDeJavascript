@@ -1,0 +1,56 @@
+p{
+    color: blue;
+}
+
+p:not(.meio){
+    color: black;
+}
+
+/* Todos os p menos o .meio */
+
+input:not(:checked)+p{
+    background: yellow;
+}
+
+ul li:nth-child(even){
+    background-color: blueviolet;
+}
+
+ul li:nth-child(odd){
+    background-color: darkturquoise;
+}
+
+ul li:nth-child(5n){
+    background-color: yellow;
+}
+
+.pseudoelementos-aula li::before{
+    content: ' - ';
+    background:red;
+    color: #fff;
+    display: block;
+}
+
+p::first-letter{
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+p::first-line{
+    background-color: red;
+}
+
+p::selection{
+    background: black;
+    color: white;
+}
+
+input::placeholder{
+    color: red;
+}
+
+/* Especificidade - id, classe e elemento */
+
+/* !important - cheat da especificidade */

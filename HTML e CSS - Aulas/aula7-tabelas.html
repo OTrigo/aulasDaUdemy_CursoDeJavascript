@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 - Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    table{
+        border-collapse: collapse;
+    }
+
+    table td, table th{
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: left;
+    }
+
+    table caption{
+        caption-side: top;
+        text-align: center;
+        font-style: italic;
+        font-size: 14px;
+        margin-bottom: 5px 0;
+    }
+
+    tfoot td{
+        background-color: #ddd;
+    }
+
+    .table-scroll{
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+</style>
+<body>
+    <div class="table-scroll"> <!-- responsividade da tabela para mobile -->
+        <table>
+            <caption>
+                Uma descrição para a tabela
+            </caption>
+    
+            <thead>
+                <!--cabeçalho da tabela-->
+                <tr>
+                    <!-- linha do cabeçalho -->
+                    <th>Título 1</th><!-- coluna do header -->
+                    <th>Título 2</th> 
+                    <th>Título 3</th>             
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">Corpo grandão</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+    
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2">corpo grandão</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

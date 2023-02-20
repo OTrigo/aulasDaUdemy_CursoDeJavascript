@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - conceitos de html e css</title>
+</head>
+<body>
+    <!-- jeito antigo, float. -->
+    <!--<div style = "width:120px; height: 120px; background: red;">
+        <div style = "width:60px; height: 60px; background: yellow; float: right;"></div>
+        <div style = "width:60px; height: 60px; background: brown;  float: right;"></div>
+        <div style = "width:60px; height: 60px; background: green;  float: right;"></div>
+    </div> -->
+
+    <!-- Header netflix -->
+    <header>
+        <div class="layout">
+            <div class="logo">
+                <p>NETFLIX</p>
+            </div>
+            <button class="log-in">
+                Entrar
+            </button>
+        </div>
+    </header>
+</body>
+</html>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        width: auto;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: sans-serif;
+    }
+
+    .logo{
+        color: white;
+        padding: 15px;
+    }
+
+    header .layout{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    button{
+        height: min-content;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    body{
+        background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/0f07b807-7be1-457d-be88-eb9153d5d4e9/e3b0dec2-5a7a-4d36-a764-f19dce28edc3/BR-pt-20220815-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+        background-size: cover;
+        background-position: top center;
+    }
+</style>

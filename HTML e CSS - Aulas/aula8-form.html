@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 - formulários</title>
+</head>
+<body>
+    <form action="#" method="POST" target="_blank" autocomplete="off">
+        <section>
+            <h1>Cabeçalho</h1>
+            <p> Formulário 1</p>
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <input type="text">
+                    <button>Enviar</button>
+                </p>
+            </fieldset>
+        </section>
+    </form>
+    <form action="#" method="POST" target="_blank" autocomplete="off">
+        <section>
+            <h1>Cabeçalho</h1>
+            <p> Formulário 2</p>
+            
+            <p>
+                <label for="nome">campo 1</label>
+                <input type="text" name="nome" id="nome" placeholder="disabled" disabled>
+                <br>
+                
+                <label for="nome2">campo 2</label>
+                <input type="text" name="nome2" id="nome2" placeholder="readonly" readonly>
+                <br>
+                
+                <label for="nome3">campo 3</label>
+                <input type="text" name="nome3" id="nome3" placeholder="é isso ai" required>
+                <br>
+                
+                <label for="dev">campo 4</label>
+                <input type="checkbox" name="dev" id="nome3" value="sim">
+                <br>
+                
+                <label for="radio">campo radio</label>
+                <input type="radio" name="radio" id="radio" value="sim">
+                <br>
+                
+                <label for="data">campo data</label>
+                <input type="date" name="data" id="data" value="sim">
+                <br>
+                
+                <label for="time">campo hora</label>
+                <input type="time" name="time" id="time">
+                <br>
+                
+                <label for="data-hora">campo hora</label>
+                <input type="datetime-local" name="data-hora" id="data-hora">
+                <br>
+                
+                <label for="cor">campo cor</label>
+                <input type="color" name="cor" id="cor">
+                <br>
+                
+                <label for="arquivo">campo cor</label>
+                <input type="file" name="arquivo" id="arquivo" accept=".png,.svg" multiple>
+                <br>
+                
+                <label for="numero">campo cor</label>
+                <input type="number" name="numero" id="numero" min="10" max="50" step="5">
+                <br>
+                
+                <label for="url">url</label>
+                <input type="url" name="url" id="url" placeholder="URL">
+                <br>
+
+                <label for="search">search</label>
+                <input type="search" name="search" id="search" placeholder="search">
+                <br>
+                
+                <label for="senha">campo cor</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite a senha...">
+                <br>
+                
+                <label for="range">range:</label>
+                <input type="range" name="range" id="range" min="10" max="50" step="2" list="tickmarks">
+                <br>
+                <datalist id="tickmarks">
+                    <option value="0" label="0%"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50" label="50%"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="90" label="100%"></option>
+                </datalist>
+
+                <label for="select">select:</label>
+                <select id="select" name="select">
+                    <optgroup label="grupo 1">
+                        <option value="1" label="Label 1" selected></option>
+                        <option value="2" label="Label 2"></option>
+                        <option value="3" label="Label 3"></option>
+                    </optgroup>
+                    <optgroup label="grupo 2">
+                        <option value="4" label="Label 4"></option>
+                        <option value="5" label="Label 5"></option>
+                        <option value="6" label="Label 6"></option>
+                    </optgroup>
+                </select>
+
+                <label for="textarea">textarea:</label>
+                <textarea id="textarea" name="textarea" placeholder="textão">
+                </textarea>
+                
+                <label for="browser">Choose your browser from the list:</label>
+                <input list="browsers" name="browser" id="browser">
+
+                    <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                    </datalist>
+                
+                    <button type="reset">resetar</button>
+                    <button type="submit">enviar</button>
+                    
+            </p>
+        </section>
+    </form>
+</body>
+</html>
